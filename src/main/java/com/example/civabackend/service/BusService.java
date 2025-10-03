@@ -54,7 +54,7 @@ public class BusService {
         return BusDTO.builder()
                 .id(bus.getId())
                 .busNumber(bus.getBusNumber())
-                .licensePlate(bus.getLincensePlate())
+                .licensePlate(bus.getLicensePlate())
                 .features(bus.getFeatures())
                 .active(bus.isActive())
                 .createdAt(bus.getCreatedAt())

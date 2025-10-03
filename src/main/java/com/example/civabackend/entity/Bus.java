@@ -17,7 +17,7 @@ public class Bus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String busNumber;
-    private String lincensePlate;
+    private String licensePlate;
     private String features;
     private boolean active;
     private LocalDateTime createdAt;
