@@ -21,6 +21,7 @@ public class Bus {
     private String features;
     private boolean active;
     private LocalDateTime createdAt;
+    private String imageURL;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brand_id")

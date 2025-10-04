@@ -14,5 +14,6 @@ public class BusDTO {
     private String features;
     private boolean active;
     private LocalDateTime createdAt;
+    private String imageURL;
     private BrandDTO brand;
 }

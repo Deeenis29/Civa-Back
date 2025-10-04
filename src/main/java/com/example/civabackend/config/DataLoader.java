@@ -30,6 +30,7 @@ public class DataLoader {
                             .createdAt(LocalDateTime.now())
                             .features("Marcopolo G8 - 2 pisos, 15m de longitud, 60 asientos, Tecnología ERV, Antiniebla Full LED, Wi-Fi, A/C, USB")
                             .licensePlate("VOL-" + i)
+                            .imageURL("https://pifmegancqzpccpalyiu.supabase.co/storage/v1/object/public/Assets/bus-civa.webp")
                             .brand(volvo)
                             .build());
                 }
@@ -42,6 +43,7 @@ public class DataLoader {
                             .createdAt(LocalDateTime.now())
                             .features("Marcopolo G8 - 2 pisos, 15m de longitud, 60 asientos, Tecnología ERV, Antiniebla Full LED, Wi-Fi, A/C, USB")
                             .licensePlate("SCA-" + i)
+                            .imageURL("https://pifmegancqzpccpalyiu.supabase.co/storage/v1/object/public/Assets/bus-civa.webp")
                             .brand(scania)
                             .build());
                 }
@@ -54,6 +56,7 @@ public class DataLoader {
                             .createdAt(LocalDateTime.now())
                             .features("Marcopolo G8 - 2 pisos, 15m de longitud, 60 asientos, Tecnología ERV, Antiniebla Full LED, Wi-Fi, A/C, USB")
                             .licensePlate("MER-" + i)
+                            .imageURL("https://pifmegancqzpccpalyiu.supabase.co/storage/v1/object/public/Assets/bus-civa.webp")
                             .brand(mercedes)
                             .build());
                 }

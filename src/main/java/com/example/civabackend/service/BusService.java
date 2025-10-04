@@ -58,6 +58,7 @@ public class BusService {
                 .features(bus.getFeatures())
                 .active(bus.isActive())
                 .createdAt(bus.getCreatedAt())
+                .imageURL(bus.getImageURL())
                 .brand(BrandDTO.builder()
                         .id(bus.getBrand().getId())
                         .name(bus.getBrand().getName())
