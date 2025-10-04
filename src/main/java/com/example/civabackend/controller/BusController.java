@@ -21,10 +21,12 @@ public class BusController {
 
     private final BusService busService;
 
-    // GET con paginación
+    // GET con paginación y filtro de estado
     @GetMapping
-    public ResponseEntity<ApiResponse<Page<BusDTO>>> getAllBuses(Pageable pageable) {
-        return ResponseEntity.ok(busService.getAllBuses(pageable));
+    public ResponseEntity<ApiResponse<Page<BusDTO>>> getAllBuses(
+            Pageable pageable,
+            @RequestParam(required = false) Boolean active) {
+        return ResponseEntity.ok(busService.getAllBuses(pageable, active));
     }
 
     // GET por ID

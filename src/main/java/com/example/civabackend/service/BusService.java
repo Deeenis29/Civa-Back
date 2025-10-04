@@ -17,10 +17,14 @@ public class BusService {
 
     private final BusRepository busRepository;
 
-    // ✅ Paginación con respuesta clara
-    public ApiResponse<Page<BusDTO>> getAllBuses(Pageable pageable) {
-        Page<BusDTO> page = busRepository.findAll(pageable)
-                .map(this::mapToDTO);
+    // ✅ Paginación con filtro de estado
+    public ApiResponse<Page<BusDTO>> getAllBuses(Pageable pageable, Boolean active) {
+        Page<BusDTO> page;
+        if (active != null) {
+            page = busRepository.findByActive(active, pageable).map(this::mapToDTO);
+        } else {
+            page = busRepository.findAll(pageable).map(this::mapToDTO);
+        }
 
         if (page.isEmpty()) {
             return ApiResponse.<Page<BusDTO>>builder()
